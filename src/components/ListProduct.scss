@@ -1,0 +1,27 @@
+// @import url("./listProductCss/_predefine.scss");
+// @import url("./listProductCss//main.css");
+// @import url("./listProductCss//owl.carousel.css");
+.ql-products {
+  // margin-left: 146px;
+  // padding: 0 5rem;
+}
+table,
+th,
+td {
+  border: 1px solid black !important;
+}
+table {
+  margin: 0 auto;
+  width: 100%;
+}
+h3 {
+  text-align: right;
+}
+.action {
+  display: flex;
+  justify-content: end;
+}
+img {
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,25 @@
+.Sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 0;
+
+  li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    border-bottom: 0.5px solid #ccc;
+  }
+  li:hover {
+    a {
+      color: black;
+    }
+    background-color: #fff;
+  }
+}
