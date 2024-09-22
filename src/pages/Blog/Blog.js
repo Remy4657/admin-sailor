@@ -79,9 +79,9 @@ const Blog = () => {
     return (
         <div className="blog ql-products">
             <h3>Table blog</h3>
-            <div className="action">
-                <button>Refresh</button>
-                <button onClick={handleShowModalCreate}>Add new blog</button>
+            <div className="action mb-3">
+                <button className="btn btn-success">Refresh</button>
+                <button onClick={handleShowModalCreate} className="btn btn-primary">Add new blog</button>
             </div>
             <div>
                 <table>
@@ -110,7 +110,7 @@ const Blog = () => {
                                                 <td>{item.content}</td>
 
 
-                                                <td>
+                                                <td className='d-flex'>
                                                     <button className="btn btn-warning mx-3" onClick={() => handleEdit(item)}>Edit</button>
                                                     <button className="btn btn-danger" onClick={() => handleDelete(item)}>Delete</button>
                                                 </td>

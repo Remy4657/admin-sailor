@@ -82,9 +82,9 @@ const Order = () => {
     return (
         <div className="blog ql-products">
             <h3>Table order</h3>
-            <div className="action">
-                <button>Refresh</button>
-                <button onClick={handleShowModalCreate}>Add new Order</button>
+            <div className="action mb-3">
+                <button className="btn btn-success">Refresh</button>
+                <button onClick={handleShowModalCreate} className="btn btn-primary">Add new Order</button>
             </div>
             <div>
                 <table>
@@ -92,9 +92,7 @@ const Order = () => {
 
                         <tr>
                             <th>Stt</th>
-                            <th>Id</th>
-                            <th>Tên sản phẩm</th>
-                            <th>Số lượng</th>
+                            <th>Thông tin sản phẩm</th>
                             <th>Tổng tiền</th>
                             <th>Phone</th>
                             <th>Email</th>
@@ -111,13 +109,14 @@ const Order = () => {
                                         return (
                                             <tr key={`row ${index}`} >
                                                 <td>{index + 1}</td>
-                                                <td>{item.id}</td>
+                                                {/* <td>{item.id}</td>
                                                 <td>{item.Products.name}</td>
-                                                <td>{item.Products.Cart_Detail.qty}</td>
+                                                <td>{item.Products.Cart_Detail.qty}</td> */}
+                                                <td>{item.infoOrder}</td>
                                                 <td>{item.totalMoney}</td>
                                                 <td>{item.phone}</td>
                                                 <td>{item.email}</td>
-                                                <td>{item.city}</td>
+                                                <td>{item.address}</td>
                                                 <td>
                                                     <button className="btn btn-warning mx-3" onClick={() => handleEdit(item)}>Edit</button>
                                                     <button className="btn btn-danger" onClick={() => handleDelete(item)}>Delete</button>

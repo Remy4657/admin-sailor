@@ -9,14 +9,14 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Logout/Register";
 import Payment from "./pages/Payment/Payment";
 import Shipping from "./pages/Shipping/Shipping";
-
 import Home from './pages/Home';
+
 function App() {
   return (
     <div className="App">
       <Sidebar />
       <Routes className="content">
-        <Route exact path="/" element={<Login />} />
+        <Route exact path="/" element={<Home />} />
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/blog" element={<Blog />} />

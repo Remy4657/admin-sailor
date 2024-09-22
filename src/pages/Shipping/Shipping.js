@@ -78,9 +78,9 @@ const Shipping = () => {
     return (
         <div className="blog ql-products">
             <h3>Table Shipping</h3>
-            <div className="action">
-                <button>Refresh</button>
-                <button onClick={handleShowModalCreate}>Add new Shipping</button>
+            <div className="action mb-3">
+                <button className="btn btn-success">Refresh</button>
+                <button onClick={handleShowModalCreate} className="btn btn-primary">Add new Shipping</button>
             </div>
             <div>
                 <table>

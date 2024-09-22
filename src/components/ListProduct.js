@@ -80,9 +80,9 @@ const ListProduct = () => {
         // <!-- start product Area -->
         <div className="ql-products">
             <h3>Table product</h3>
-            <div className="action">
-                <button>Refresh</button>
-                <button onClick={handleShowModalCreate}>Add new product</button>
+            <div className="action mb-3">
+                <button className="btn btn-success">Refresh</button>
+                <button onClick={handleShowModalCreate} className="btn btn-primary ml-3">Add new product</button>
             </div>
             <div>
                 <table>

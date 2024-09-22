@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { toast } from 'react-toastify'
 import { useLocation } from 'react-router-dom'
 import './Login.scss'
-// import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 // import {
 //     FETCH_DATA_LOGIN,
 //     FETCH_DATA_SUCCESS,
@@ -24,7 +24,9 @@ const Login = () => {
     const [password, setPassword] = useState('')
 
     const handleLogin = async (e) => {
+        console.log("admin login")
         e.preventDefault()
+        toast.error("error")
         // dispatch(FETCH_DATA_LOGIN());
         let res = await userLogin({ username, password })
 
